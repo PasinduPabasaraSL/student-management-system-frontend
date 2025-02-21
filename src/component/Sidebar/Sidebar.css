@@ -1,0 +1,96 @@
+/* General Sidebar Styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2C3E50; /* Dark background */
+    color: #ECF0F1; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-role {
+    font-size: 14px;
+    color: #BDC3C7; /* Lighter text for the role */
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item {
+    margin: 10px 0;
+}
+
+/* Sidebar Links with Border */
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    color: #ECF0F1; /* Light text color */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid transparent; /* Invisible border by default */
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+/* Sidebar Hover Effects with Border Change */
+.sidebar-link:hover {
+    background-color: #34495E; /* Hover background color */
+    border-color: #1ABC9C; /* Border color on hover */
+    cursor: pointer;
+}
+
+/* Sidebar Link Active State */
+.sidebar-link.active {
+    background-color: #1ABC9C; /* Active link color */
+    border-color: #16A085; /* Darker border for active item */
+}
+
+.sidebar-icon {
+    font-size: 18px;
+    margin-right: 10px;
+    filter: invert(30%) sepia(100%) saturate(0%) hue-rotate(0deg); /* Apply white color filter to emojis */
+}
+
+.sidebar-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Optional: Add a subtle effect for better visual feedback */
+.sidebar-link:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 3px rgba(26, 188, 156, 0.6); /* Light focus shadow */
+}

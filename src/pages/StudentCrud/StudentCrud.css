@@ -1,0 +1,185 @@
+.container {
+    padding: 20px;
+    background-color: white;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    width: 82%;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.actions .button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actions .button:hover {
+    background-color: #45a049;
+}
+
+/* Search Bar */
+.searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f1f1f1;
+}
+
+/* Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.th, .td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.th {
+    font-weight: bold;
+    background-color: #e2e2e2;
+}
+
+.td {
+    color: #333;
+}
+
+/* Action Buttons */
+.button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.editButton {
+    background-color: #3498db; /* Blue */
+    color: #ffffff;
+}
+
+.deleteButton {
+    background-color: #e74c3c; /* Red */
+    color: #ffffff;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+/* Modal */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    width: 400px;
+}
+
+.modal h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f1f1f1;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.secondaryButton {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.primaryButton {
+    background-color: #007BFF; /* Blue */
+    color: #ffffff;
+}
+
+.button.secondaryButton:hover {
+    background-color: #ddd;
+}
+
+.button.primaryButton:hover {
+    background-color: #0056b3;
+}
+
+/* Layout for Buttons */
+.crudButtons {
+    margin-top: 20px;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .table {
+        font-size: 14px;
+    }
+
+    .modal {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .modal h2 {
+        font-size: 20px;
+    }
+}
